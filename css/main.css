@@ -1,0 +1,33 @@
+html {
+  background: #f2f0ef;
+  height: 100%; /* always set */
+  overflow: auto;
+}
+
+body {
+  height: 100%; /* always set */
+  overflow: auto;
+}
+
+.flex-container { /* changes here impact blue squares */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-flow: row wrap; /* how the squares wrap */
+}
+
+.flex { /* changs here impact the text inside the blue squares */
+  display: flex;
+  flex-basis: 30%; /* why there are 3 squares per row */
+  justify-content: center; /* vertically centered text */
+  align-items: center; /* horizontally centered text */
+  margin: 10px; /* why there is vertical space between the boxes */
+  height: 250px;
+  width: 250px;
+  background: #5d8aa8;
+}
+
+p {
+  color: #ffffff;
+}
